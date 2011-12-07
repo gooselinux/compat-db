@@ -1,0 +1,11 @@
+diff -up compat-db-4.6.21/db-4.2.52/dist/configure.ac.ac_config compat-db-4.6.21/db-4.2.52/dist/configure.ac
+--- compat-db-4.6.21/db-4.2.52/dist/configure.ac.ac_config	2003-10-15 02:55:17.000000000 +0200
++++ compat-db-4.6.21/db-4.2.52/dist/configure.ac	2010-05-19 07:44:14.958224225 +0200
+@@ -4,6 +4,7 @@
+ PACKAGE=db
+ AC_INIT(Berkeley DB,
+ 	__EDIT_DB_VERSION__, support@sleepycat.com, db-__EDIT_DB_VERSION__)
++AC_CONFIG_MACRO_DIR([aclocal])
+ AC_CONFIG_SRCDIR([../db/db.c])
+ AC_CONFIG_HEADERS([db_config.h:config.hin])
+ 
